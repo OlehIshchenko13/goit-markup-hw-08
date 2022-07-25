@@ -1,0 +1,119 @@
+.footer {
+   background-color: var(--gray-bd-test);
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.footer__container {
+   display: flex;
+   gap: 70px;
+   &:last-child {
+      gap: 90px;
+   }
+}
+
+.socials-items {
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+}
+.footer .socials-icon {
+   color: #fff;
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+}
+.footer .social-link {
+   color: #fff;
+}
+
+.info__address {
+   color: var(--gray-bg-section);
+   font-style: normal;
+   line-height: 1.7;
+   margin-top: 20px;
+   margin-bottom: 9px;
+}
+
+.container-footer {
+   display: flex;
+   gap: 70px;
+}
+.container-footer:last-child {
+   gap: 90px;
+}
+
+.fotter__title {
+   font-size: 14px;
+   line-height: calc(16 / 14);
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+   color: #ffffff;
+   margin-bottom: 20px;
+   margin-top: 12px;
+}
+.footer__contacts {
+   margin-top: 9px;
+}
+
+/* fotter FORM */
+
+.footer-button {
+   color: var(--white-text);
+   background-color: var(--accent-color);
+   font-weight: 700;
+   font-size: var(--secondary-font-size);
+   line-height: 1.9;
+   border-radius: 4px;
+   border: none;
+
+   padding: 10px 62px 10px 28px;
+
+   position: relative;
+
+   margin-left: 12px;
+   cursor: pointer;
+}
+
+.footer-svg {
+   position: absolute;
+   top: 13px;
+   right: 28px;
+}
+
+.email-footer-lable {
+   width: 358px;
+   height: 50px;
+   color: var(--white-text);
+
+   font-size: 16px;
+   line-height: calc(20px / 16px);
+   font-weight: 400;
+   letter-spacing: 0.03em;
+
+   padding-left: 16px;
+
+   border: none;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   outline: none;
+   background-color: transparent;
+
+   transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &::placeholder {
+      position: absolute;
+      left: 16px;
+      top: 15px;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+}
+
+.email-footer-lable:hover::placeholder,
+.email-footer-lable:focus::placeholder {
+   color: var(--accent-color);
+   border: var(--accent-color);
+}
