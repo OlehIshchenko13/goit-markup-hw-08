@@ -1,13 +1,24 @@
 .footer {
    background-color: var(--gray-bd-test);
-   padding-top: 60px;
    padding-bottom: 60px;
+   padding-top: 60px;
 }
 .footer__container {
-   display: flex;
-   gap: 70px;
-   &:last-child {
-      gap: 90px;
+   justify-content: center;
+   // display: flex;
+   // gap: 70px;
+   // &:last-child {
+   //    gap: 90px;
+   // }
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
    }
 }
 
@@ -20,9 +31,6 @@
    background-color: rgba(255, 255, 255, 0.1);
    border-radius: 50%;
 }
-.footer .social-link {
-   color: #fff;
-}
 
 .info__address {
    color: var(--gray-bg-section);
@@ -32,14 +40,12 @@
    margin-bottom: 9px;
 }
 
-.container-footer {
-   display: flex;
-   gap: 70px;
+.footer__info {
+   text-align: center;
+   margin-bottom: 60px;
+   @media screen and (min-width: 768px) {
+   }
 }
-.container-footer:last-child {
-   gap: 90px;
-}
-
 .fotter__title {
    font-size: 14px;
    line-height: calc(16 / 14);
@@ -48,13 +54,27 @@
 
    color: #ffffff;
    margin-bottom: 20px;
-   margin-top: 12px;
+   margin-top: 60px;
+   text-align: center;
+   @media screen and (min-width: 768px) {
+      margin-top: 12px;
+   }
+   @media screen and (min-width: 1200px) {
+      text-align: left;
+   }
 }
-.footer__contacts {
-   margin-top: 9px;
-}
+// .footer__contacts {
+//    // margin-top: 9px;
+// }
 
 /* fotter FORM */
+
+.email-form {
+   text-align: center;
+
+   @media screen and (min-width: 1200px) {
+   }
+}
 
 .footer-button {
    color: var(--white-text);
@@ -68,8 +88,11 @@
    padding: 10px 62px 10px 28px;
 
    position: relative;
-
-   margin-left: 12px;
+   margin-top: 20px;
+   @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+   }
+   //
    cursor: pointer;
 }
 
@@ -80,9 +103,13 @@
 }
 
 .email-footer-lable {
-   width: 358px;
+   width: 100%;
    height: 50px;
    color: var(--white-text);
+
+   @media screen and (min-width: 1200px) {
+      width: 358px;
+   }
 
    font-size: 16px;
    line-height: calc(20px / 16px);

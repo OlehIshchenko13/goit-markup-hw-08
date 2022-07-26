@@ -4,7 +4,20 @@ p {
 
 .section__title {
    font-weight: 700;
-   font-size: 36px;
-   line-height: 1.2;
    text-align: center;
+   font-size: 28px;
+   line-height: 1.17;
+   margin-bottom: 30px;
+   color: vav(--primary-text-color);
+
+   @media screen and (min-width: 768px) {
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
+   }
+   @media screen and (min-width: 1200px) {
+      font-size: 28px;
+      line-height: 1.71;
+      margin-bottom: 50px;
+   }
 }

@@ -1,7 +1,12 @@
 .team-list {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 50px;
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   @media screen and (min-width: 1200px) {
+      display: flex;
+   }
 }
 
 .team-member {
@@ -9,13 +14,47 @@
    height: 368px;
 }
 .team-item {
+   max-width: 100%;
+   height: auto;
+
+   margin-bottom: 30px;
+   background: #fff;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
+
+   &:last-child {
+      margin: 0;
+   }
+   @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 536px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 428px;
+      margin-bottom: 0;
+   }
 }
 .team-info {
-   padding: 30px 7px 30px 7px;
-   background-color: #fff;
+   padding: 30px 32px;
+}
+.team-foto {
+   width: 100%;
+   height: auto;
+   @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 374px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+   }
 }
 .team-member-name {
    font-weight: 500;
@@ -67,4 +106,5 @@
 
 .section-team {
    background-color: var(--gray-bg-section);
+   width: 100%;
 }

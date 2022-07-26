@@ -70,30 +70,15 @@
          <section class="section benefits__section">
             <div class="container container__benefits">
                <h2 class="hidden__header">Наши преимущества</h2>
-               <ul class="list benefits__logos">
-                  <li class="benefits__logos-item">
-                     <svg class="benefits__item-logo" width="70" height="70">
-                        <use href="./images/symbol-defs.svg#icon-antenna"></use>
-                     </svg>
-                  </li>
-                  <li class="list benefits__logos-item">
-                     <svg class="benefits__item-logo" width="70" height="70">
-                        <use href="./images/symbol-defs.svg#icon-clock"></use>
-                     </svg>
-                  </li>
-                  <li class="list benefits__logos-item">
-                     <svg class="benefits__item-logo" width="70" height="70">
-                        <use href="./images/symbol-defs.svg#icon-diagram"></use>
-                     </svg>
-                  </li>
-                  <li class="list benefits__logos-item">
-                     <svg class="benefits__item-logo" width="70" height="70">
-                        <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-                     </svg>
-                  </li>
-               </ul>
+
                <ul class="list benefits__list">
                   <li class="benefits__list-item">
+                     <div class="list-item__logo">
+                        <svg class="benefits__item-logo" width="70" height="70">
+                           <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                        </svg>
+                     </div>
+
                      <h3 class="benefits__list-subtitle">Внимание к деталям</h3>
                      <p class="benefits__item-text">
                         Идейные соображения, а также начало повседневной работы по формированию
@@ -101,6 +86,12 @@
                      </p>
                   </li>
                   <li class="benefits__list-item">
+                     <div class="list-item__logo">
+                        <svg class="benefits__item-logo" width="70" height="70">
+                           <use href="./images/symbol-defs.svg#icon-clock"></use>
+                        </svg>
+                     </div>
+
                      <h3 class="benefits__list-subtitle">Пунктуальность</h3>
                      <p class="benefits__item-text">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за
@@ -108,6 +99,12 @@
                      </p>
                   </li>
                   <li class="benefits__list-item">
+                     <div class="list-item__logo">
+                        <svg class="benefits__item-logo" width="70" height="70">
+                           <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                        </svg>
+                     </div>
+
                      <h3 class="benefits__list-subtitle">Планирование</h3>
                      <p class="benefits__item-text">
                         Равным образом консультация с широким активом в значительной степени
@@ -115,6 +112,12 @@
                      </p>
                   </li>
                   <li class="benefits__list-item">
+                     <div class="list-item__logo">
+                        <svg class="benefits__item-logo" width="70" height="70">
+                           <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                        </svg>
+                     </div>
+
                      <h3 class="benefits__list-subtitle">Современные технологии</h3>
                      <p class="benefits__item-text">
                         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -159,7 +162,17 @@
                <h2 class="section__title team-title">Наша команда</h2>
                <ul class="ul-img team-list">
                   <li class="team-item">
-                     <img src="./images/team/img.jpg" alt="Дизайнер" width="270" />
+                     <img
+                        class="team-foto"
+                        srcset="
+                           ./images/team/team-1@1x-min.jpg 1x,
+                           ./images/team/team-1@2x-min.jpg 2x
+                        "
+                        src="./images/team/team-1.jpg"
+                        width="270"
+                        height="260"
+                        alt="Дизайнер"
+                     />
                      <div class="team-info">
                         <h3 class="team-member-name">Игорь Демьяненко</h3>
                         <p class="team-member-title">Product Designer</p>
@@ -204,7 +217,17 @@
                      </div>
                   </li>
                   <li class="team-item">
-                     <img src="./images/team/img-1.jpg" alt="Разработчик" width="270" />
+                     <img
+                        class="team-foto"
+                        srcset="
+                           ./images/team/team-2@1x-min.jpg 1x,
+                           ./images/team/team-2@2x-min.jpg 2x
+                        "
+                        src="./images/team/team-2.jpg"
+                        width="270"
+                        height="260"
+                        alt="Разработчик"
+                     />
                      <div class="team-info">
                         <h3 class="team-member-name">Ольга Репина</h3>
                         <p class="team-member-title">Frontend Developerr</p>
@@ -249,7 +272,17 @@
                      </div>
                   </li>
                   <li class="team-item">
-                     <img src="./images/team/img-2.jpg" alt="Маркетолог" width="270" />
+                     <img
+                        class="team-foto"
+                        srcset="
+                           ./images/team/team-3@1x-min.jpg 1x,
+                           ./images/team/team-3@2x-min.jpg 2x
+                        "
+                        src="./images/team/team-3.jpg"
+                        width="270"
+                        height="260"
+                        alt="Маркетолог"
+                     />
                      <div class="team-info">
                         <h3 class="team-member-name">Николай Тарасов</h3>
                         <p class="team-member-title">Marketing</p>
@@ -294,7 +327,17 @@
                      </div>
                   </li>
                   <li class="team-item">
-                     <img src="./images/team/img-3.jpg" alt="Дизайнер интерфейсов" width="270" />
+                     <img
+                        class="team-foto"
+                        srcset="
+                           ./images/team/team-4@1x-min.jpg 1x,
+                           ./images/team/team-4@2x-min.jpg 2x
+                        "
+                        src="./images/team/team-4.jpg"
+                        width="270"
+                        height="260"
+                        alt="Дизайнер интерфейсов"
+                     />
 
                      <div class="team-info">
                         <h3 class="team-member-name">Михаил Ермаков</h3>
@@ -344,50 +387,52 @@
          </section>
          <!-- CLIents -->
          <section class="clients section">
-            <h2 class="section__title">Постоянные клиенты</h2>
-            <ul class="clients-list list">
-               <li class="clients-item">
-                  <a href="" class="link client-link"
-                     ><svg class="clients-logo" width="106" height="60">
-                        <use href="./images/symbol-defs.svg#icon-logo-1"></use></svg
-                  ></a>
-               </li>
+            <div class="container">
+               <h2 class="section__title">Постоянные клиенты</h2>
+               <ul class="clients-list list">
+                  <li class="clients-item">
+                     <a href="" class="link client-link"
+                        ><svg class="clients-logo" width="106" height="60">
+                           <use href="./images/symbol-defs.svg#icon-logo-1"></use></svg
+                     ></a>
+                  </li>
 
-               <li class="clients-item">
-                  <a href="" class="link client-link"
-                     ><svg class="clients-logo" width="106" height="60">
-                        <use href="./images/symbol-defs.svg#icon-logo-2"></use></svg
-                  ></a>
-               </li>
+                  <li class="clients-item">
+                     <a href="" class="link client-link"
+                        ><svg class="clients-logo" width="106" height="60">
+                           <use href="./images/symbol-defs.svg#icon-logo-2"></use></svg
+                     ></a>
+                  </li>
 
-               <li class="clients-item">
-                  <a href="" class="link client-link"
-                     ><svg class="clients-logo" width="106" height="60">
-                        <use href="./images/symbol-defs.svg#icon-logo-3"></use></svg
-                  ></a>
-               </li>
+                  <li class="clients-item">
+                     <a href="" class="link client-link"
+                        ><svg class="clients-logo" width="106" height="60">
+                           <use href="./images/symbol-defs.svg#icon-logo-3"></use></svg
+                     ></a>
+                  </li>
 
-               <li class="clients-item">
-                  <a href="" class="link client-link"
-                     ><svg class="clients-logo" width="106" height="60">
-                        <use href="./images/symbol-defs.svg#icon-logo-4"></use></svg
-                  ></a>
-               </li>
+                  <li class="clients-item">
+                     <a href="" class="link client-link"
+                        ><svg class="clients-logo" width="106" height="60">
+                           <use href="./images/symbol-defs.svg#icon-logo-4"></use></svg
+                     ></a>
+                  </li>
 
-               <li class="clients-item">
-                  <a href="" class="link client-link"
-                     ><svg class="clients-logo" width="106" height="60">
-                        <use href="./images/symbol-defs.svg#icon-logo-5"></use></svg
-                  ></a>
-               </li>
+                  <li class="clients-item">
+                     <a href="" class="link client-link"
+                        ><svg class="clients-logo" width="106" height="60">
+                           <use href="./images/symbol-defs.svg#icon-logo-5"></use></svg
+                     ></a>
+                  </li>
 
-               <li class="clients-item">
-                  <a href="" class="link client-link"
-                     ><svg class="clients-logo" width="106" height="60">
-                        <use href="./images/symbol-defs.svg#icon-logo-6"></use></svg
-                  ></a>
-               </li>
-            </ul>
+                  <li class="clients-item">
+                     <a href="" class="link client-link"
+                        ><svg class="clients-logo" width="106" height="60">
+                           <use href="./images/symbol-defs.svg#icon-logo-6"></use></svg
+                     ></a>
+                  </li>
+               </ul>
+            </div>
          </section>
       </main>
       <!-- FOOTER -->
@@ -452,7 +497,7 @@
             </div>
             <div class="footer-form">
                <h2 class="fotter__title">Подпишитесь на рассылку</h2>
-               <form name="email-form">
+               <form class="email-form">
                   <label class="form-footer" name="form-footer" for="email-footer">
                      <input
                         class="email-footer-lable"

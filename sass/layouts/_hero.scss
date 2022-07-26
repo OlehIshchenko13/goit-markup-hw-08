@@ -1,34 +1,73 @@
 .hero__section {
    max-width: 1600px;
-   margin-right: auto;
-   margin-left: auto;
+   margin: 0 auto;
+   padding-top: 118px;
+   padding-bottom: 118px;
+   text-align: center;
    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/bg-hero/img.webp);
+      url(../images/bg-hero/bg-img_sm.png);
+
+   // mobile retina screen
+   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url(../images/bg-hero/bg-img_sm@2x.png);
+   }
+
+   // tablet screen
+   @media screen and (min-width: 768px) {
+      background-image: url(../images/bg-hero/bg-img_md.png);
+      // tablet retina screen
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg-hero/bg-img_md@2x.png);
+      }
+   }
+
+   // desktop screen
+   @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url(../images/bg-hero/bg-img_lg.png);
+      // desktop retina screen
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg-hero/bg-img_lg@2x.png);
+      }
+   }
    background-position: center;
-   border-style: cover;
-   display: flex;
-   background-color: var(--gray-bd-test);
-   justify-content: center;
-   align-items: center;
-   padding-top: 200px;
-   padding-bottom: 200px;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .hero__container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
+   margin: 0 auto;
+
+   @media screen and (min-width: 1200px) {
+      width: 700px;
+   }
 }
 .hero__title {
    color: var(--white-text);
+   margin-bottom: 30px;
+
    font-weight: 900;
-   font-size: 44px;
-   line-height: 1.4;
+   font-size: 26px;
+   line-height: 1.61;
+   text-align: center;
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   width: 700px;
-   margin-bottom: 30px;
+
+   @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.61;
+      width: 360px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+   }
+   @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.3;
+      width: 696px;
+   }
 }
 .hero__button {
    color: var(--white-text);
