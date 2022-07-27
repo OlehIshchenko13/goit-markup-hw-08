@@ -20,20 +20,18 @@
       <!-- --- HEADER --- -->
       <header class="header">
          <div class="container header__container">
+            <a href="./index.html" class="logo header__logo"
+               >Web<span class="logo__dark">Studio</span></a
+            >
             <nav class="header__menu">
-               <a href="./index.html" class="logo header__logo"
-                  >Web<span class="logo__dark">Studio</span></a
-               >
                <ul class="header__nav">
                   <li class="header__nav-item">
-                     <a class="link header__nav-link" href="./index.html">Студия</a>
+                     <a class="link header__nav-link header__nav-link--current" href="./index.html"
+                        >Студия</a
+                     >
                   </li>
                   <li class="header__nav-item">
-                     <a
-                        class="link header__nav-link header__nav-link--current"
-                        href="./portfolio.html"
-                        >Портфолио</a
-                     >
+                     <a class="link header__nav-link" href="./portfolio.html">Портфолио</a>
                   </li>
                   <li class="header__nav-item">
                      <a href="#" class="link header__nav-link">Контакты</a>
@@ -56,6 +54,12 @@
                   >
                </li>
             </ul>
+
+            <button class="button-menu" data-menu-open>
+               <svg class="buttom-menu__svg" width="40" height="40">
+                  <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+               </svg>
+            </button>
          </div>
       </header>
       <main>
@@ -423,5 +427,34 @@
             </div>
          </div>
       </footer>
+      <div class="modal-menu" data-menu>
+         <button class="modal-menu__btn" data-menu-close>
+            <svg height="40" width="40">
+               <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+         </button>
+         <ul class="modal-menu__nav">
+            <li class="nav__item list"><a class="link nav__link" href="./index.html">Студия</a></li>
+            <li class="nav__item list">
+               <a class="link nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item list"><a class="link nav__link" href="">Контакты</a></li>
+         </ul>
+         <ul class="modal-menu__cont">
+            <li class="cont__item list">
+               <a class="link cont__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="cont__item list">
+               <a class="link cont__link" href="tel:+380991111111">+38 096 111 11 11</a>
+            </li>
+         </ul>
+         <ul class="modal-menu__socials">
+            <li class="socials__item list"><a class="link socials__link" href="#">Instagram</a></li>
+            <li class="socials__item list"><a class="link socials__link" href="#">Twitter</a></li>
+            <li class="socials__item list"><a class="link socials__link" href="#">Facebook</a></li>
+            <li class="socials__item list"><a class="link socials__link" href="#">LinkedIn</a></li>
+         </ul>
+      </div>
+      <script src="./js/menu.js"></script>
    </body>
 </html>
