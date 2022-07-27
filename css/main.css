@@ -291,6 +291,9 @@ p {
           column-gap: 30px;
 }
 .contacts--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1290,6 +1293,7 @@ p {
 }
 
 .modal-form-lable {
+  padding-left: 42px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
